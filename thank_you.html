@@ -1,10 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
+
+  <!-- スマホ画面に最適化 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>ご回答ありがとうございました。</title>
+
   <!-- 3秒後に指定URLへ自動遷移 -->
   <meta http-equiv="refresh" content="3;URL=https://docs.google.com/forms/d/e/1FAIpQLSefSltftCRm7GvjNTEERYFiitmIzH8n6htGM966_3RZYFUC-Q/viewform?usp=header" />
+
   <style>
     body {
       font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
@@ -12,29 +19,68 @@
       background-color: #fafafa;
       color: #333;
       padding: 50px 20px;
-      line-height: 1.6;
+      line-height: 1.8;
+      margin: 0;
     }
+
     .big-text {
-      font-size: 1.4em;
-      margin-bottom: 1em;
+      font-size: 24px;
+      margin-bottom: 24px;
       font-weight: bold;
     }
+
     .highlight {
       background: #ffefc4;
       padding: 0.2em 0.5em;
       border-radius: 5px;
+      white-space: nowrap;
     }
+
     .notice {
-      margin-top: 2em;
-      font-size: 0.95em;
+      margin-top: 35px;
+      font-size: 18px;
       color: #777;
+    }
+
+    /* スマホ用 */
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 40px 15px;
+      }
+
+      .big-text {
+        font-size: 22px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      .notice {
+        font-size: 17px;
+        margin-top: 30px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <p class="big-text">ご回答ありがとうございました。</p>
-  <p class="big-text">続けて <span class="highlight">アンケート</span> へのご協力をお願いいたします。</p>
-  <p class="big-text">口コミをご記入いただくと <span class="highlight">ドリンク1杯サービス</span>！</p>
-  <p class="notice">3秒後に自動的に画面が切り替わります。</p>
+
+  <p class="big-text">
+    ご回答ありがとうございました。
+  </p>
+
+  <p class="big-text">
+    続けて <span class="highlight">アンケート</span> への<br>
+    ご協力をお願いいたします。
+  </p>
+
+  <p class="big-text">
+    口コミをご記入いただくと<br>
+    <span class="highlight">ドリンク1杯サービス</span>！
+  </p>
+
+  <p class="notice">
+    3秒後に自動的に画面が切り替わります。
+  </p>
+
 </body>
 </html>
