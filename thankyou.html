@@ -2,9 +2,15 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
+
+  <!-- スマホ画面に最適化 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>ご回答ありがとうございました</title>
+
   <!-- 7秒後に指定URLへ自動遷移 -->
   <meta http-equiv="refresh" content="3;URL=https://search.google.com/local/writereview?placeid=ChIJddU7R-DzGGARekLrOy-vV-o" />
+
   <style>
     body {
       font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
@@ -12,26 +18,49 @@
       color: #333;
       text-align: center;
       padding: 48px 22px;
-      line-height: 1.7;
+      line-height: 1.8;
+      margin: 0;
     }
+
     .big-text {
-      font-size: 1.4em;
-      margin-bottom: 1em;
+      font-size: 24px;
+      margin-bottom: 24px;
       font-weight: bold;
     }
+
     .highlight {
       background: #ffe6b2;
       padding: 4px 10px;
       border-radius: 5px;
       display: inline-block;
     }
+
     .notice {
-      margin-top: 2em;
-      font-size: 1em;
+      margin-top: 35px;
+      font-size: 18px;
       color: #666;
+    }
+
+    /* スマホ用 */
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 40px 15px;
+      }
+
+      .big-text {
+        font-size: 22px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      .notice {
+        font-size: 17px;
+        margin-top: 30px;
+      }
     }
   </style>
 </head>
+
 <body>
   <p class="big-text">ご回答ありがとうございました。</p>
   <p class="big-text">続けて <span class="highlight">Google口コミ</span> のご協力をお願いいたします。</p>
@@ -40,12 +69,3 @@
   <p class="notice">3秒後に自動的に画面が切り替わります。</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
